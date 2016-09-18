@@ -1,2 +1,6 @@
-# Visual-Vote-Counter
+# Visual Vote Counter
 A small project of mine for counting votes in an auditorium during an event.
+
+The way it works is that it reads in images of the auditorium, in which the audience is holding up colored flags. It then runs a blob-detection algorithm to detect the flags, and marks them on the image. It also allows the user to add and remove detections, as I wasn't able to get it to be as accurate as I wanted in time. When selecting an image for detection, the vote it belongs to must also be chosen. In the case I was using it, these were company pitches, so each vote is a company name.
+
+If you want to use it for yourself, it won't be immediately usable-- I was under time-pressure and hard-coded a few things. Knowing what I do now, there are probably better approaches to this problem, such as convolutional neural nets (although this would require significantly more training data than I was able to obtain at the time), and several image normalization methods could probably be used to improve accuracy.
